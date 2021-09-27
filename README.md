@@ -95,9 +95,9 @@ SSH into the control node and follow the steps below:
 - Update the YAML config file to include pertinent settings such as host type, IP, appropriate ports and credential information where appropriate.
 - Run the playbook, and navigate to either the internet-facing URLs for DVWA or Kibana, or from Jump Box Provisioner Ansible container (SSH to ELK or Web hosts, run 'sudo docker ps' to verify image information), to check that the installation worked as expected.
 
-- <name>beat playbooks are denoted by <name>beat-playbook.yml files. These files exist in: Jump Box Provisioner Ansible container /etc/ansible/roles directory.
-- Jump Box Provisioner Ansible container /etc/ansible/ contains a hosts file for denoting destination groups and IPs. ex., [webservers] contain the IPs for Web-1 and Web-2, including the ansible python interpreters to process YAML commands, as well as [elk], server IP and python interpreter. Jump Box Provisioner Ansible container /etc/ansible/files directory includes <name>beat-config.yml files, configuration settings (such as hostname and port, user credentials) specific to the type of beat being deployed. 
-- From the public administrator workstation, browse http://<current dynamic public IP of ELK server>:5601/app/kibana#/home to verify server status. Note this is only accessible from the IP specified in the security group and the ELK-Server VM must be running.
+- (name)beat playbooks are denoted by (name)beat-playbook.yml files. These files exist in: Jump Box Provisioner Ansible container /etc/ansible/roles directory.
+- Jump Box Provisioner Ansible container /etc/ansible/ contains a hosts file for denoting destination groups and IPs. ex., [webservers] contain the IPs for Web-1 and Web-2, including the ansible python interpreters to process YAML commands, as well as [elk], server IP and python interpreter. Jump Box Provisioner Ansible container /etc/ansible/files directory includes (name)beat-config.yml files, configuration settings (such as hostname and port, user credentials) specific to the type of beat being deployed. 
+- From the public administrator workstation, browse http://(current dynamic public IP of ELK server):5601/app/kibana#/home to verify server status. Note this is only accessible from the IP specified in the security group and the ELK-Server VM must be running.
 
 - From Jump Box Provisioner Ansible container /etc/ansible/roles directory, deploy desired playbook using command:
-   ansible-playbook <name>beat-playbook.yml
+   ansible-playbook (name)beat-playbook.yml
