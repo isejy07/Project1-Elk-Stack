@@ -30,7 +30,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - "Load balancing lets you evenly distribute network traffic to prevent failure caused by overloading a particular resource. This strategy improves the performance and availability of applications, websites, databases, and other computing resources. It also helps process user requests quickly and accurately" - [ibm.com](https://www.ibm.com/cloud/learn/load-balancing), Jun 10, 2019. The advantage in a jump box is that it allows an internet-facing secure access point as a gateway to perform admin tasks in the virtual network.
-   Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to hardware metrics and updated system logs.
+   Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to hardware metrics and view updated system logs.
 - Filebeat watches for new log events and the resulting files and transmits them to ELK.
 - Metricbeat records CPU usage or memory load based on the services being used and forwards the data to ELK.
 
