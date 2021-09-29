@@ -102,7 +102,9 @@ SSH into the control node and follow the steps below:
 - From Jump Box Provisioner Ansible container /etc/ansible/roles directory, deploy desired playbook using command:
    ansible-playbook (name)beat-playbook.yml
 
+
 ### Supplemental 
 
 Learn more about the use of [Containers in Cloud Security](https://github.com/isejy07/Project1-Elk-Stack/blob/main/Interview/cloud_security_containers.docx)
 
+Explore materials from the [Linux](https://github.com/isejy07/Project1-Elk-Stack/tree/main/Linux) units
