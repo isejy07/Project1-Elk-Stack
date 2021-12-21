@@ -1,4 +1,4 @@
-# Project1-Elk-Stack
+# Project 1: ELK Stack
 ELK Stack deployment to monitor operating conditions on vulnerable web servers
 
 ## Automated ELK Stack Deployment
